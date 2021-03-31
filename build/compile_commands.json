@@ -1,0 +1,17 @@
+[
+{
+  "directory": "/home/pi/Desktop/vu-huu-son-k15/Do-An-ToT-Nghiep/build",
+  "command": "/usr/bin/cc  -I/home/pi/Desktop/vu-huu-son-k15/Do-An-ToT-Nghiep/include  -g   -o CMakeFiles/zigbee.dir/src/main.c.o   -c /home/pi/Desktop/vu-huu-son-k15/Do-An-ToT-Nghiep/src/main.c",
+  "file": "/home/pi/Desktop/vu-huu-son-k15/Do-An-ToT-Nghiep/src/main.c"
+},
+{
+  "directory": "/home/pi/Desktop/vu-huu-son-k15/Do-An-ToT-Nghiep/build",
+  "command": "/usr/bin/cc  -I/home/pi/Desktop/vu-huu-son-k15/Do-An-ToT-Nghiep/include  -g   -o CMakeFiles/zigbee.dir/src/mqtt.c.o   -c /home/pi/Desktop/vu-huu-son-k15/Do-An-ToT-Nghiep/src/mqtt.c",
+  "file": "/home/pi/Desktop/vu-huu-son-k15/Do-An-ToT-Nghiep/src/mqtt.c"
+},
+{
+  "directory": "/home/pi/Desktop/vu-huu-son-k15/Do-An-ToT-Nghiep/build",
+  "command": "/usr/bin/cc  -I/home/pi/Desktop/vu-huu-son-k15/Do-An-ToT-Nghiep/include  -g   -o CMakeFiles/zigbee.dir/src/uart.c.o   -c /home/pi/Desktop/vu-huu-son-k15/Do-An-ToT-Nghiep/src/uart.c",
+  "file": "/home/pi/Desktop/vu-huu-son-k15/Do-An-ToT-Nghiep/src/uart.c"
+}
+]

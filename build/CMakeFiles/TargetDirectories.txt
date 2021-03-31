@@ -1,0 +1,3 @@
+/home/pi/Desktop/vu-huu-son-k15/Do-An-ToT-Nghiep/build/CMakeFiles/rebuild_cache.dir
+/home/pi/Desktop/vu-huu-son-k15/Do-An-ToT-Nghiep/build/CMakeFiles/zigbee.dir
+/home/pi/Desktop/vu-huu-son-k15/Do-An-ToT-Nghiep/build/CMakeFiles/edit_cache.dir

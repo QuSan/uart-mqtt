@@ -1,0 +1,46 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/mqtt.h
+
+../include/uart.h
+
+/home/pi/Desktop/vu-huu-son-k15/Do-An-ToT-Nghiep/src/uart.c
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+limits.h
+-
+errno.h
+-
+stdint.h
+-
+fcntl.h
+-
+termios.h
+-
+unistd.h
+-
+time.h
+-
+pthread.h
+-
+sys/ioctl.h
+-
+sys/types.h
+-
+sys/stat.h
+-
+uart.h
+/home/pi/Desktop/vu-huu-son-k15/Do-An-ToT-Nghiep/src/uart.h
+mqtt.h
+/home/pi/Desktop/vu-huu-son-k15/Do-An-ToT-Nghiep/src/mqtt.h
+
