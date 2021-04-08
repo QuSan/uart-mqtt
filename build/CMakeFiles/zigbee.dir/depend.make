@@ -6,6 +6,7 @@ CMakeFiles/zigbee.dir/src/main.c.o: ../include/uart.h
 CMakeFiles/zigbee.dir/src/main.c.o: ../src/main.c
 
 CMakeFiles/zigbee.dir/src/mqtt.c.o: ../include/mqtt.h
+CMakeFiles/zigbee.dir/src/mqtt.c.o: ../include/uart.h
 CMakeFiles/zigbee.dir/src/mqtt.c.o: ../src/mqtt.c
 
 CMakeFiles/zigbee.dir/src/uart.c.o: ../include/mqtt.h

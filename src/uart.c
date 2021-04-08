@@ -17,30 +17,49 @@
 #include"mqtt.h"
 
 int fd;/*File Descriptor*/
-//char sampleMessage[]="hello";
-//pthread_t sendHandle, receiveHandle;
-int n = 0;
-
-// tra ve duoc mot chuoi//
-int ReceiveThread()
+void Send_Uart(char *SendMessage)
 {
-	static char receiveBuffer[255];
+    int i;
+	for(i = 0;i<255;i++)
+	{ 
+		if(SendMessage[i]=='#')
+		{ break;}
+	}
+    printf("\nsend data size %d \n" ,i);
+	write(fd, SendMessage,i);
+}
+
+void Receive_Uart()
+{   char receiveBuffer[255];  
 	int8_t receiveCount;
-	int8_t i;       
-		receiveCount = read(fd, receiveBuffer, 255);
-		while (receiveCount > 0)
-		{ 
-			receiveCount = read(fd, receiveBuffer, 255);
-			Send_server(receiveBuffer);	
-                 printf("%c",receiveBuffer);
-		}
-                printf("%c",receiveBuffer);
-	//	usleep(1000);
+	int8_t i; 
+	                
+    char send_receiveBuffer[255];
+	int8_t j=0; 
+	int k=1;
+			while(k)
+			{     
+				receiveCount = read(fd, receiveBuffer, 255);
+				for(int i =0; i<receiveCount;i++)
+				{   
+					if(receiveBuffer[i]=='#')
+					{		send_receiveBuffer[j]='\0';
+					        k=0;
+					        break;
+					}
+					send_receiveBuffer[j]=receiveBuffer[i];
+					j++;			
+					
+				}
+			}
+			    
+				printf("%s \n",send_receiveBuffer);
+				Send_mqtt(send_receiveBuffer);
+
 }
 
 void Setup_Uart()
 {			
-	
 	/*------------------------------- Opening the Serial Port -------------------------------*/
 	/* Change /dev/ttyUSB0 to the one corresponding to your system */
     	fd = open("/dev/ttyAMA0",O_RDWR | O_NOCTTY);					
@@ -71,6 +90,5 @@ void Setup_Uart()
 	    printf("\n  ERROR ! in Setting attributes");
         /*------------------------------- Read data from serial port -----------------------------*/
 	tcflush(fd, TCIFLUSH);   /* Discards old data in the rx buffer            */
-
     return 0;
 }

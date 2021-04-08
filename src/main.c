@@ -13,14 +13,18 @@
 
 
 int main()
-{    Setup_Uart();
-   
-   char SMS[100];
-   while(1)
-   {  
-     ReceiveThread();
-   }
-
-
-    return 0;
+{     Setup_Uart();
+      Setup_mqtt();
+      Receive_mqtt();
+while(1)
+{   
+    Receive_Uart();
 }
+
+  //MQTTClient_disconnect(client, 10000);
+  //  MQTTClient_destroy(&client);
+
+return 0;
+
+}
+

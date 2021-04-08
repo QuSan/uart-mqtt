@@ -7,6 +7,7 @@ CMakeFiles/zigbee.dir/src/main.c.o
  /home/pi/Desktop/vu-huu-son-k15/Do-An-ToT-Nghiep/src/main.c
 CMakeFiles/zigbee.dir/src/mqtt.c.o
  ../include/mqtt.h
+ ../include/uart.h
  /home/pi/Desktop/vu-huu-son-k15/Do-An-ToT-Nghiep/src/mqtt.c
 CMakeFiles/zigbee.dir/src/uart.c.o
  ../include/mqtt.h
